@@ -1,0 +1,322 @@
+{
+  "@context" : {
+    "hasLeftLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane",
+      "@type" : "@id"
+    },
+    "Route" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route"
+    },
+    "remainingDisOnRoad" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad"
+    },
+    "hasPOI" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Lane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+    },
+    "RightMostLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane"
+    },
+    "hasSibling" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling",
+      "@type" : "@id"
+    },
+    "hasLeftLaneDivider" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider",
+      "@type" : "@id"
+    },
+    "hasNeighbouringLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane",
+      "@type" : "@id"
+    },
+    "forwardParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "laneIndex" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "laneDividerIndex" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isOnRoad" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad",
+      "@type" : "@id"
+    },
+    "hasNextLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane",
+      "@type" : "@id"
+    },
+    "CurrentLocation" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation"
+    },
+    "openToRight" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "LaneDivider" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+    },
+    "UrbanRoadPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart"
+    },
+    "NormalLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane"
+    },
+    "hasPosition" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition",
+      "@type" : "@id"
+    },
+    "MPP" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP"
+    },
+    "ChangeLaneActivity" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity"
+    },
+    "SpatialWindowParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter"
+    },
+    "TrafficSign" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "x" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x"
+    },
+    "hasLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane",
+      "@type" : "@id"
+    },
+    "isPartOfMPP" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP",
+      "@type" : "@id"
+    },
+    "travelledDisOnRoad" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad"
+    },
+    "travelledDisOnLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane"
+    },
+    "MotorwayRoadPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart"
+    },
+    "hasSWParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter",
+      "@type" : "@id"
+    },
+    "POI" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI"
+    },
+    "openToLeft" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasRightLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane",
+      "@type" : "@id"
+    },
+    "hasImmediateNext" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "timeStamp" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "RoadPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+    },
+    "hasPoint" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint",
+      "@type" : "@id"
+    },
+    "hasDirectNextLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane",
+      "@type" : "@id"
+    },
+    "RouteSegment" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment"
+    },
+    "CityStreetPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart"
+    },
+    "hasPredLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane",
+      "@type" : "@id"
+    },
+    "isOnLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane",
+      "@type" : "@id"
+    },
+    "foresightParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasNext" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext",
+      "@type" : "@id"
+    },
+    "hasRouteSegment" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment",
+      "@type" : "@id"
+    },
+    "hasForesightParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter",
+      "@type" : "@id"
+    },
+    "Point" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+    },
+    "Parameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter"
+    },
+    "length" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Position" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position"
+    },
+    "hasSpatialWindow" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow",
+      "@type" : "@id"
+    },
+    "isPartOfRoute" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "hasDirectNeighbourLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane",
+      "@type" : "@id"
+    },
+    "hasParticipant" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant",
+      "@type" : "@id"
+    },
+    "hasRightLaneDivider" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider",
+      "@type" : "@id"
+    },
+    "ForesightParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter"
+    },
+    "ExitLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane"
+    },
+    "y" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y"
+    },
+    "remainingDisOnLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane"
+    },
+    "CurrentPosition" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition"
+    },
+    "backwardParameter" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "hasDirectNextRouteSegment" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment",
+      "@type" : "@id"
+    },
+    "EndPoint" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint"
+    },
+    "HighwayRoadPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart"
+    },
+    "hasLaneDivider" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider",
+      "@type" : "@id"
+    },
+    "StartPoint" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint"
+    },
+    "CurrentLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane"
+    },
+    "changeToLeftNumOfLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasDirectPredLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane",
+      "@type" : "@id"
+    },
+    "hasTrafficSign" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign",
+      "@type" : "@id"
+    },
+    "hasStartPoint" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint",
+      "@type" : "@id"
+    },
+    "SpatialWindow" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow"
+    },
+    "hasDirectRightLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane",
+      "@type" : "@id"
+    },
+    "Vehicle" : {
+      "@id" : "http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle"
+    },
+    "CurrentRoadPart" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart"
+    },
+    "LeftMostLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane"
+    },
+    "hasLocation" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation",
+      "@type" : "@id"
+    },
+    "hasEndPoint" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint",
+      "@type" : "@id"
+    },
+    "travelDirection" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "changeToRightNumOfLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane"
+    },
+    "hasDirectLeftLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "EntryLane" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane"
+    },
+    "hasNextRouteSegment" : {
+      "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment",
+      "@type" : "@id"
+    }
+  }
+}
