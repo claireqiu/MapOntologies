@@ -1,1 +1,1 @@
-# MapOntologies
+# High-level Map Ontology
