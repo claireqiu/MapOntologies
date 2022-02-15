@@ -1,0 +1,633 @@
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/1.0.0/> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://purl.org/dc/elements/1.1/creator> "Haonan Qiu" .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://purl.org/dc/elements/1.1/date> "14/02/2022" .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://purl.org/dc/terms/description> "The purpose of the high-level map (HLM) ontology is: i) to represent the generic road knowledge for the autonomous driving functions, ii) to provide road environmental context for location-awareness and lane change notification via spatial reasoning, and iii) to support continuous dynamic map processes along a route."@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://purl.org/dc/terms/title> "HLM: the High-level Map ontology"@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://www.w3.org/2000/01/rdf-schema#label> "High-level Map Ontology"@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a lane and its direct next one."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a lane and its direct predesuccessor."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation that allows to describe the forsight parameter."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a road part and its immediate next one."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a road part and a lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a lane and its lane dividers."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the location of a acitivty."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a lane and its neighbouring lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext> <http://www.w3.org/2000/01/rdf-schema#comment> "A recursive relationship to express successors of a road part."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A recursive relationship to express successors of a lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a road part and a Point of Interest (POI)."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the participant of an activity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A  relationship to express the point of an entity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to describe the position of a vehicle."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A recrusive relationship between a lane and its predesuccessors."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to describe a entity that can compose the route."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation that allows to describe the saptial window  parameters."@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpatialWindowParameter"@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a road part and its siblings."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to describe the spatial window."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a road part and a traffic sign."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to describe the location is on a lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to describe the location is on a road part."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationshp between road parts and a most probable path (MPP)."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship to express that a road part is a part of a Most Probable Path (MPP)."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the backward parameter value of a spatial window."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the number of lanes towards left of a change lane activity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the number of lanes towards right of a change lane activity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the foresight parameter value."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the forward parameter value of a spatial window."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the index of a lane divider."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the index of a lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the length of a entity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship to express that the vehicle is allowed to chagne the left-hand lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship to express that the vehicle is allowed to chagne the right-hand lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the vehicle remaining distance on a lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the vehicle remaining distance on a road part."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the timestamp of an entity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship to express the direction a vehicle travels on a public road."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the vehicle travlled distance on a lane."@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane> <http://www.w3.org/2000/01/rdf-schema#label> "travelledDistanceOnLane" .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation to express the vehicle travlled distance on a road part."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship to describe the x-coordinate of the point."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship to describe the y-coordinate of the point."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle
+<http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "When the vehicle changes lane to an adjacent lane,\nit is a change lane activity."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the current location of the vehicle"@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "The current position of the vehicle."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> <http://www.w3.org/2000/01/rdf-schema#comment> "A lane is part of a roadway that is designated to be used by a single line of vehicles to control and guide drivers."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider> <http://www.w3.org/2000/01/rdf-schema#comment> "A barrier  or a lane marking that defines the borderline of the lane."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP> <http://www.w3.org/2000/01/rdf-schema#comment> "The route ahead on which the vehicle is expected to move."@en .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP> <http://www.w3.org/2000/01/rdf-schema#label> "Most Probable Path"@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI> <http://www.w3.org/2000/01/rdf-schema#label> "Point Of Interest"@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A class to organize various parameters."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> <http://www.w3.org/2000/01/rdf-schema#comment> "A point on the Earth’s surface with the x-coordinate and the y-coordinate, where x corresponds to the longitude and y to the latitude."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position> <http://www.w3.org/2000/01/rdf-schema#comment> "The position of an vechile described by x-y coordinates and a timestamp."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP> .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> <http://www.w3.org/2000/01/rdf-schema#comment> "A road part is the part of road  within  two intersections"@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint> .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> <http://www.w3.org/2000/01/rdf-schema#comment> "The route of a vehicle."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment> .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "The intermediate  parts  of a route."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial window defines the region of area where the map should be provided to the vehicle."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point> .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign> <http://www.w3.org/2000/01/rdf-schema#comment> "Signs that are positioned along the road with regulatory or informational content."@en .
+# 
+# http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

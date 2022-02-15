@@ -1,0 +1,711 @@
+@prefix : <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> .
+
+<http://www.bmw-carit.de/Foresight/Map/Ontologies/High/> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <http://www.bmw-carit.de/Foresight/Map/Ontologies/High/1.0.0/> ;
+                                                          <http://purl.org/dc/elements/1.1/creator> "Haonan Qiu" ;
+                                                          <http://purl.org/dc/elements/1.1/date> "14/02/2022" ;
+                                                          <http://purl.org/dc/terms/description> "The purpose of the high-level map (HLM) ontology is: i) to represent the generic road knowledge for the autonomous driving functions, ii) to provide road environmental context for location-awareness and lane change notification via spatial reasoning, and iii) to support continuous dynamic map processes along a route."@en ;
+                                                          <http://purl.org/dc/terms/title> "HLM: the High-level Map ontology"@en ;
+                                                          rdfs:label "High-level Map Ontology"@en ;
+                                                          owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane
+:hasDirectLeftLane rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasDirectNeighbourLane ,
+                                      :hasLeftLane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane
+:hasDirectNeighbourLane rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasNeighbouringLane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane
+:hasDirectNextLane rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasNextLane ;
+                   rdfs:domain :Lane ;
+                   rdfs:range :Lane ;
+                   rdfs:comment "A relationship between a lane and its direct next one."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment
+:hasDirectNextRouteSegment rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasNextRouteSegment .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane
+:hasDirectPredLane rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasPredLane ;
+                   rdfs:comment "A relationship between a lane and its direct predesuccessor."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane
+:hasDirectRightLane rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasDirectNeighbourLane ,
+                                       :hasRightLane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint
+:hasEndPoint rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasPoint .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter
+:hasForesightParameter rdf:type owl:ObjectProperty ;
+                       rdfs:domain :CurrentLocation ;
+                       rdfs:range :ForesightParameter ;
+                       rdfs:comment "A relation that allows to describe the forsight parameter."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext
+:hasImmediateNext rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasNext ;
+                  rdfs:comment "A relationship between a road part and its immediate next one."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane
+:hasLane rdf:type owl:ObjectProperty ;
+         rdfs:range :Lane ;
+         rdfs:comment "A relation between a road part and a lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider
+:hasLaneDivider rdf:type owl:ObjectProperty ;
+                rdfs:comment "A relationship between a lane and its lane dividers."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane
+:hasLeftLane rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasNeighbouringLane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider
+:hasLeftLaneDivider rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasLaneDivider ;
+                    rdfs:domain :Lane ;
+                    rdfs:range :LaneDivider .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:comment "A relationship specifying the location of a acitivty."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane
+:hasNeighbouringLane rdf:type owl:ObjectProperty ;
+                     rdfs:comment "A relationship between a lane and its neighbouring lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext
+:hasNext rdf:type owl:ObjectProperty ;
+         rdfs:domain :RoadPart ;
+         rdfs:range :RoadPart ;
+         rdfs:comment "A recursive relationship to express successors of a road part."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane
+:hasNextLane rdf:type owl:ObjectProperty ;
+             rdfs:domain :Lane ;
+             rdfs:range :Lane ;
+             rdfs:comment "A recursive relationship to express successors of a lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment
+:hasNextRouteSegment rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasRouteSegment .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI
+:hasPOI rdf:type owl:ObjectProperty ;
+        rdfs:domain :RoadPart ;
+        rdfs:range :POI ;
+        rdfs:comment "A relationship between a road part and a Point of Interest (POI)."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                rdfs:comment "A relationship specifying the participant of an activity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint
+:hasPoint rdf:type owl:ObjectProperty ;
+          rdfs:comment "A  relationship to express the point of an entity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition
+:hasPosition rdf:type owl:ObjectProperty ;
+             rdfs:comment "A relation to describe the position of a vehicle."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane
+:hasPredLane rdf:type owl:ObjectProperty ;
+             rdfs:comment "A recrusive relationship between a lane and its predesuccessors."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane
+:hasRightLane rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasNeighbouringLane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider
+:hasRightLaneDivider rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasLaneDivider ;
+                     rdfs:domain :Lane ;
+                     rdfs:range :LaneDivider .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment
+:hasRouteSegment rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isPartOfRoute ;
+                 rdfs:domain :Route ;
+                 rdfs:comment "A relation to describe a entity that can compose the route."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter
+:hasSWParameter rdf:type owl:ObjectProperty ;
+                rdfs:comment "A relation that allows to describe the saptial window  parameters."@en ;
+                rdfs:label "hasSpatialWindowParameter"@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling
+:hasSibling rdf:type owl:ObjectProperty ;
+            rdfs:comment "A relationship between a road part and its siblings."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow
+:hasSpatialWindow rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CurrentLocation ;
+                  rdfs:range :SpatialWindow ;
+                  rdfs:comment "A relation to describe the spatial window."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint
+:hasStartPoint rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasPoint .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign
+:hasTrafficSign rdf:type owl:ObjectProperty ;
+                rdfs:domain :RoadPart ;
+                rdfs:range :TrafficSign ;
+                rdfs:comment "A relationship between a road part and a traffic sign."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane
+:isOnLane rdf:type owl:ObjectProperty ;
+          rdfs:comment "A relation to describe the location is on a lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad
+:isOnRoad rdf:type owl:ObjectProperty ;
+          rdfs:comment "A relation to describe the location is on a road part."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP
+:isPartOfMPP rdf:type owl:ObjectProperty ;
+             rdfs:comment "A relationshp between road parts and a most probable path (MPP)."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute
+:isPartOfRoute rdf:type owl:ObjectProperty ;
+               rdfs:range :Route ;
+               rdfs:comment "A relationship to express that a road part is a part of a Most Probable Path (MPP)."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter
+:backwardParameter rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :SpatialWindowParameter ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "A relationship stating the backward parameter value of a spatial window."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane
+:changeToLeftNumOfLane rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "A relationship stating the number of lanes towards left of a change lane activity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane
+:changeToRightNumOfLane rdf:type owl:DatatypeProperty ;
+                        rdfs:comment "A relationship stating the number of lanes towards right of a change lane activity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter
+:foresightParameter rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ForesightParameter ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment "A relationship stating the foresight parameter value."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter
+:forwardParameter rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :SpatialWindowParameter ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "A relationship stating the forward parameter value of a spatial window."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex
+:laneDividerIndex rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LaneDivider ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "A relation to express the index of a lane divider."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex
+:laneIndex rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Lane ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "A relation to express the index of a lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "A relation to express the length of a entity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft
+:openToLeft rdf:type owl:DatatypeProperty ;
+            rdfs:domain :LaneDivider ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "The relationship to express that the vehicle is allowed to chagne the left-hand lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight
+:openToRight rdf:type owl:DatatypeProperty ;
+             rdfs:domain :LaneDivider ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "The relationship to express that the vehicle is allowed to chagne the right-hand lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane
+:remainingDisOnLane rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "A relation to express the vehicle remaining distance on a lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad
+:remainingDisOnRoad rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :CurrentLocation ;
+                    rdfs:comment "A relation to express the vehicle remaining distance on a road part."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp
+:timeStamp rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:float ;
+           rdfs:comment "A relationship stating the timestamp of an entity."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection
+:travelDirection rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "The relationship to express the direction a vehicle travels on a public road."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane
+:travelledDisOnLane rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "A relation to express the vehicle travlled distance on a lane."@en ;
+                    rdfs:label "travelledDistanceOnLane" .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad
+:travelledDisOnRoad rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "A relation to express the vehicle travlled distance on a road part."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x
+:x rdf:type owl:DatatypeProperty ;
+   rdfs:comment "The relationship to describe the x-coordinate of the point."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y
+:y rdf:type owl:DatatypeProperty ;
+   rdfs:comment "The relationship to describe the y-coordinate of the point."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle
+<http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle> rdf:type owl:Class ;
+                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :hasPosition ;
+                                                                          owl:someValuesFrom :Position
+                                                                        ] .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity
+:ChangeLaneActivity rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasLocation ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :CurrentLocation
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasParticipant ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle>
+                                    ] ;
+                    rdfs:comment """When the vehicle changes lane to an adjacent lane,
+it is a change lane activity."""@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart
+:CityStreetPart rdf:type owl:Class ;
+                rdfs:subClassOf :RoadPart .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane
+:CurrentLane rdf:type owl:Class ;
+             rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation
+:CurrentLocation rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasForesightParameter ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ForesightParameter
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasPosition ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :CurrentPosition
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasSpatialWindow ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :SpatialWindow
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isOnLane ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :CurrentLane
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isOnRoad ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :CurrentRoadPart
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :remainingDisOnLane ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:decimal
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :remainingDisOnRoad ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:decimal
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :travelledDisOnLane ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:decimal
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :travelledDisOnRoad ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:decimal
+                                 ] ;
+                 rdfs:comment "Describes the current location of the vehicle"@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition
+:CurrentPosition rdf:type owl:Class ;
+                 rdfs:subClassOf :Position ;
+                 rdfs:comment "The current position of the vehicle."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart
+:CurrentRoadPart rdf:type owl:Class ;
+                 rdfs:subClassOf :RoadPart .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint
+:EndPoint rdf:type owl:Class ;
+          rdfs:subClassOf :Point .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane
+:EntryLane rdf:type owl:Class ;
+           rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane
+:ExitLane rdf:type owl:Class ;
+          rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter
+:ForesightParameter rdf:type owl:Class ;
+                    rdfs:subClassOf :Parameter .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart
+:HighwayRoadPart rdf:type owl:Class ;
+                 rdfs:subClassOf :RoadPart .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane
+:Lane rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasPoint ;
+                        owl:someValuesFrom :Point
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasLeftLaneDivider ;
+                        owl:allValuesFrom :LaneDivider
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasNeighbouringLane ;
+                        owl:allValuesFrom :Lane
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRightLaneDivider ;
+                        owl:allValuesFrom :LaneDivider
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :laneIndex ;
+                        owl:someValuesFrom xsd:integer
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :length ;
+                        owl:someValuesFrom xsd:decimal
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :travelDirection ;
+                        owl:someValuesFrom xsd:boolean
+                      ] ;
+      rdfs:comment "A lane is part of a roadway that is designated to be used by a single line of vehicles to control and guide drivers."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider
+:LaneDivider rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :laneDividerIndex ;
+                               owl:allValuesFrom xsd:integer
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :openToLeft ;
+                               owl:allValuesFrom xsd:boolean
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :openToRight ;
+                               owl:allValuesFrom xsd:boolean
+                             ] ;
+             rdfs:comment "A barrier  or a lane marking that defines the borderline of the lane."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane
+:LeftMostLane rdf:type owl:Class ;
+              rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP
+:MPP rdf:type owl:Class ;
+     rdfs:comment "The route ahead on which the vehicle is expected to move."@en ;
+     rdfs:label "Most Probable Path"@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart
+:MotorwayRoadPart rdf:type owl:Class ;
+                  rdfs:subClassOf :RoadPart .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane
+:NormalLane rdf:type owl:Class ;
+            rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI
+:POI rdf:type owl:Class ;
+     rdfs:label "Point Of Interest"@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:comment "A class to organize various parameters."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :x ;
+                         owl:someValuesFrom xsd:double
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :y ;
+                         owl:someValuesFrom xsd:double
+                       ] ;
+       rdfs:comment "A point on the Earth’s surface with the x-coordinate and the y-coordinate, where x corresponds to the longitude and y to the latitude."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :timeStamp ;
+                            owl:someValuesFrom xsd:float
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :x ;
+                            owl:someValuesFrom xsd:double
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :y ;
+                            owl:someValuesFrom xsd:double
+                          ] ;
+          rdfs:comment "The position of an vechile described by x-y coordinates and a timestamp."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane
+:RightMostLane rdf:type owl:Class ;
+               rdfs:subClassOf :Lane .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart
+:RoadPart rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPoint ;
+                            owl:someValuesFrom :Point
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDirectPredLane ;
+                            owl:allValuesFrom :RoadPart
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasImmediateNext ;
+                            owl:allValuesFrom :RoadPart
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLane ;
+                            owl:allValuesFrom :Lane
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPOI ;
+                            owl:allValuesFrom :POI
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSibling ;
+                            owl:allValuesFrom :RoadPart
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTrafficSign ;
+                            owl:allValuesFrom :TrafficSign
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isPartOfMPP ;
+                            owl:allValuesFrom :MPP
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEndPoint ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Point
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasStartPoint ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Point
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :length ;
+                            owl:someValuesFrom xsd:unsignedInt
+                          ] ;
+          rdfs:comment "A road part is the part of road  within  two intersections"@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route
+:Route rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRouteSegment ;
+                         owl:someValuesFrom :RouteSegment
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPoint ;
+                         owl:allValuesFrom :Point
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasEndPoint ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :EndPoint
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasStartPoint ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :StartPoint
+                       ] ;
+       rdfs:comment "The route of a vehicle."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment
+:RouteSegment rdf:type owl:Class ;
+              rdfs:subClassOf :Route ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasDirectNextRouteSegment ;
+                                owl:allValuesFrom :RouteSegment
+                              ] ;
+              rdfs:comment "The intermediate  parts  of a route."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow
+:SpatialWindow rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasSWParameter ;
+                                 owl:someValuesFrom :SpatialWindowParameter
+                               ] ;
+               rdfs:comment "A spatial window defines the region of area where the map should be provided to the vehicle."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter
+:SpatialWindowParameter rdf:type owl:Class ;
+                        rdfs:subClassOf :Parameter .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint
+:StartPoint rdf:type owl:Class ;
+            rdfs:subClassOf :Point .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign
+:TrafficSign rdf:type owl:Class ;
+             rdfs:comment "Signs that are positioned along the road with regulatory or informational content."@en .
+
+
+###  http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart
+:UrbanRoadPart rdf:type owl:Class ;
+               rdfs:subClassOf :RoadPart .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
