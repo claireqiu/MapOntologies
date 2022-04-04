@@ -1,0 +1,1302 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://ontology.eil.utoronto.ca/icity/Vehicle/Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Haonan Qiu"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "14/02/2022"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The purpose of the high-level map (HLM) ontology is: i) to represent the generic road knowledge for the autonomous driving functions, ii) to provide road environmental context for location-awareness and lane change notification via spatial reasoning, and iii) to support continuous dynamic map processes along a route."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "HLM: the High-level Map ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High-level Map Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/1.0.0/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ChangeLaneActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "When the vehicle changes lane to an adjacent lane,\nit is a change lane activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CityStreetPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes the current location of the vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The current position of the vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentRoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EndPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/EntryLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ExitLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/HighwayRoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A lane is part of a roadway that is designated to be used by a single line of vehicles to control and guide drivers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A barrier  or a lane marking that defines the borderline of the lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LeftMostLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MPP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The route ahead on which the vehicle is expected to move."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Most Probable Path"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/MotorwayRoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/NormalLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Point Of Interest"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class to organize various parameters."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A point on the Earth’s surface with the x-coordinate and the y-coordinate, where x corresponds to the longitude and y to the latitude."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The position of an vechile described by x-y coordinates and a timestamp."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RightMostLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A road part is the part of road  within  two intersections"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The route of a vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RouteSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The intermediate  parts  of a route."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial window defines the region of area where the map should be provided to the vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Parameter"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/StartPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Point"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Signs that are positioned along the road with regulatory or informational content."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/UrbanRoadPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/backwardParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the backward parameter value of a spatial window."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToLeftNumOfLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the number of lanes towards left of a change lane activity."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/changeToRightNumOfLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the number of lanes towards right of a change lane activity."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/foresightParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the foresight parameter value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/forwardParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the forward parameter value of a spatial window."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindowParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectLeftLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane"
+  }, {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a lane and its direct next one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNextRouteSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectPredLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a lane and its direct predesuccessor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectRightLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasDirectNeighbourLane"
+  }, {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasEndPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasForesightParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation that allows to describe the forsight parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/ForesightParameter"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasImmediateNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a road part and its immediate next one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a road part and a lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a lane and its lane dividers."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLeftLaneDivider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the location of a acitivty."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a lane and its neighbouring lane."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recursive relationship to express successors of a road part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recursive relationship to express successors of a lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNextRouteSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPOI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a road part and a Point of Interest (POI)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/POI"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the participant of an activity."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A  relationship to express the point of an entity."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to describe the position of a vehicle."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPredLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recrusive relationship between a lane and its predesuccessors."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasNeighbouringLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRightLaneDivider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasLaneDivider"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasRouteSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to describe a entity that can compose the route."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSWParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation that allows to describe the saptial window  parameters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSpatialWindowParameter"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSibling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a road part and its siblings."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasSpatialWindow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to describe the spatial window."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/SpatialWindow"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasStartPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasPoint"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/hasTrafficSign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a road part and a traffic sign."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/RoadPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/TrafficSign"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to describe the location is on a lane."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isOnRoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to describe the location is on a road part."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfMPP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationshp between road parts and a most probable path (MPP)."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/isPartOfRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship to express that a road part is a part of a Most Probable Path (MPP)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Route"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneDividerIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the index of a lane divider."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/laneIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the index of a lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/Lane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the length of a entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToLeft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relationship to express that the vehicle is allowed to chagne the left-hand lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/openToRight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relationship to express that the vehicle is allowed to chagne the right-hand lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/LaneDivider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the vehicle remaining distance on a lane."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/remainingDisOnRoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the vehicle remaining distance on a road part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/CurrentLocation"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/timeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship stating the timestamp of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relationship to express the direction a vehicle travels on a public road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the vehicle travlled distance on a lane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "travelledDistanceOnLane"
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/travelledDisOnRoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation to express the vehicle travlled distance on a road part."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/x",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relationship to describe the x-coordinate of the point."
+  } ]
+}, {
+  "@id" : "http://www.bmw-carit.de/Foresight/Map/Ontologies/High/y",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relationship to describe the y-coordinate of the point."
+  } ]
+} ]
